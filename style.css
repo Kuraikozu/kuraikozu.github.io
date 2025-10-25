@@ -8,8 +8,8 @@ html,body {
     color: #caa6f7;
     background: #0e0a13;
     position: absolute;
-    top: 30%;
-    left: 30%;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
     padding: 0px;
     margin: 0px;
@@ -17,23 +17,24 @@ html,body {
 }
 
 img {
-    height: 230px;
-    width: 630px;
+    height: 330px;
+    width: 530px;
     object-fit: cover;
-    border: 2px solid #caa6f7;
-    border-bottom: #b580f7;
+    border: 2px groove #1f093a;
+    border-bottom: #1f063d;
     margin-bottom: -3px;
 
 }
 
 nav {
-    color:#2d0163;
-    background-color: #22004b;
+    color:#290e4d;
+    background-color: #0d011d;
     display: grid;
     grid-template-columns: auto auto auto auto;
     margin-top: 0px;
     text-align: center;
-    border: 2px solid #b580f7;
+    border: 2px groove #0f0120;
+    border-radius: 3px;
     border-top: none;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -41,16 +42,12 @@ nav {
 
 }
 
-h1 {
-    text-align: right;
-}
 
 ul {
     list-style-type: none;
     margin-left: -35px;
     margin-top: 10px;
     margin-bottom: 12px;
-    cursor: pointer;
 
 
 }
@@ -58,7 +55,36 @@ ul {
 
 a {
     text-decoration: none;
-    color: #caa6f7;
+    color: #25133d;
+    
 
+} 
 
+a:hover {
+    color: #dcc5f8;
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a:active {
+    color: #9247f5;
+}
+
+input {
+    background-color: #131714;
+    font: 16px 'Ubuntu Mono', monospace;
+    color: #edf7ea;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #edf7ea;
+    border-top: none;
+    text-align: center;
+    margin-top: 0px;
+    outline: none;
+    padding: 5px;
+  }
+
+input::placeholder {
+    color: #edf7ea;
 }

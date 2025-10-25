@@ -9,14 +9,43 @@
         <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
     </head>
     <body>
-        <h1>is in work</h1>
 
-       <ul>
-         <li><a href="https://github.com/Kuraikozu">github</a></li>
-         <li><a href="https://discord.com/users/747192296092598274">discord</a></li>
-         <li><a href="https://de.namemc.com/profile/_Catfeine.1">namemc</a></li>
+            <h1>is in work</h1>
 
-       </ul>
+    <img id="wallpaper" src="wallpaper/testing.jpg" alt="wallpaper image">
+    <script>
+
+        var images = ["wallpaper/testing.jpg"]
+
+        function GetImage() {
+          const index = Math.floor(Math.random() * images.length);
+          return images[index];
+        }
+
+        var wallpaper = GetImage()
+
+        document.getElementById('wallpaper').src = wallpaper
+    </script>
+
+        <nav>
+            <ul>
+             <li><a href="https://github.com/Kuraikozu">github</a></li>
+             <li><a href="https://discord.com/users/747192296092598274">discord</a></li>
+             <li><a href="https://de.namemc.com/profile/_Catfeine.1">namemc</a></li>
+            </ul>
+
+            <ul>
+             <li><a href="https://twitch.tv/Kuraikozu">twitch</a></li>
+             <li><a href="https://twitter.com/Kuraikozu">twitter</a></li>
+             <li><a href="https://www.youtube.com/@Kuraikozu">youtube</a></li>
+            </ul>
+
+            <ul>
+             <li><a href="https://bsky.app/profile/kuraikozu.bsky.social">bluesky</a></li>
+             <li><a href="https://youtu.be/dQw4w9WgXcQ?si=h7Xygbyung_CDTbE">Never</a></li>
+             <li><a href="">???</a></li>
+            </ul>
+
+        </nav>     
     </body>
-
 </html>
