@@ -1,54 +1,88 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Kiri</title>
-        <meta content="kiri" property="og:title" />
-        <meta content="@Kuraikozu on discord" property="og:description"/>
-        <meta content="#4d008c" data-react-helmet="true" name="theme-color" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/x-icon" href="favicon-16x16.png">
-    </head>
-    <body>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet", href="style.css">
+<title>Kiri's Website</title>
+<style>
 
-            <h1>is in work</h1>
+</style>
+</head>
+<body>
 
-    <script>
-        //Meow
-    </script>
+<!-- 🌙 / ☀️ Theme Toggle -->
+ <div class="theme-toggle">
+    <input type="checkbox" id="theme-switch" />
+    <label for="theme-switch" class="switch">
+        <span class="icon moon">🌙</span>
+        <span class="icon sun">☀️</span>
+    </label>
+ </div>
 
-    <img id="wallpaper" src="wallpaper/testing.jpg" alt="wallpaper image">
-    <script>
+<!-- SMALL PROFILE CARD -->
+<div class="profile-card">
+    <div class="banner"></div>
+    <img class="avatar" src="testing.png" />
 
-        var images = ["wallpaper/testing.jpg"]
+    <div class="profile-info">
+        <div class="username">Kiri</div>
+        <div class="tagline">Kuraiko(zu) • Love you</div>
+    </div>
 
-        function GetImage() {
-          const index = Math.floor(Math.random() * images.length);
-          return images[index];
-        }
+    <div class="badge-container">
 
-        var wallpaper = GetImage()
+        <div class="badge" data-type="small" data-tooltip="Test">
+            <img src="icons/testing.png">
+        </div>
+    </div>
 
-        document.getElementById('wallpaper').src = wallpaper
-    </script>
+    <div id="tooltip"></div>
 
-        <nav>
-            <ul>
-             <li><a href="https://github.com/Kuraikozu">github</a></li>
-             <li><a href="https://discord.com/users/747192296092598274">discord</a></li>
-             <li><a href="https://de.namemc.com/profile/_Catfeine.1">namemc</a></li>
-            </ul>
+    <div class="section">
+        <b>About Me</b><br>
+        I LOVE BUNNIES ^•ﻌ•^
+    </div>
 
-            <ul>
-             <li><a href="https://twitch.tv/Kuraikozu">twitch</a></li>
-             <li><a href="https://twitter.com/Kuraikozu">twitter</a></li>
-             <li><a href="https://www.youtube.com/@Kuraikozu">youtube</a></li>
-            </ul>
+    <div class="section">
+        <b>Mutual Servers — 6</b>
+    </div>
 
-            <ul>
-             <li><a href="https://bsky.app/profile/kuraikozu.bsky.social">bluesky</a></li>
-             <li><a href="https://youtu.be/dQw4w9WgXcQ?si=h7Xygbyung_CDTbE">Never</a></li>
-             <li><a href="">???</a></li>
-            </ul>
-        </nav>     
-    </body>
+    <div class="view-full" id="openFull">View Full Profile</div>
+</div>
+
+<!-- FULL PROFILE MODAL -->
+<div class="modal-bg" id="modalBg">
+    <div class="full-modal">
+        <div class="close-btn" id="closeModal">✖</div>
+
+        <!-- LEFT SIDE PROFILE (small info) -->
+        <div class="left-panel">
+            <div class="banner"></div>
+            <img class="avatar" src="avatar.png" style="left: 15px; top:-35px;" />
+
+            <div style="padding: 15px;">
+                <h2>In Work</h2>
+                <p>Hey! This is my profile c:</p>
+                <p><b>Member Since:</b> ???</p>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE EXTENDED INFO -->
+        <div class="right-panel">
+            <h2>Games I like</h2>
+            <p>Minecraft, Stardew Valley, Terraria, Subnautica ...</p>
+
+            <h2>Favorite Game</h2>
+            <p>Minecraft</p>
+
+            <h2>Games in Rotation</h2>
+            <p>Meow</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
